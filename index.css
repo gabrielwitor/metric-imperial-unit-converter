@@ -69,6 +69,7 @@ body{
     background-color: var(--white);
 
     border: none;
+    cursor: pointer;
 }
 
 .main #user-input, #convert-btn{
