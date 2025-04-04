@@ -1,0 +1,154 @@
+:root{
+    --black: #1C1C1C;
+    --white: #FFFFFF;
+    --dark-white: #F4F4F4;
+    --purple: #6943FF;
+    --light-purple: #B295FF;
+    --dark-purple: #5A537B;
+    --grey: #353535;
+    --light-grey: #3D3D3D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-color: var(--black);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    min-width: 550px;
+}
+
+.main{
+    background-color: var(--purple);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 285px;
+
+    text-align: center;
+}
+
+.main h1{
+    color: var(--white);
+}
+
+.main #user-input{
+    width: 120px;
+    height: 80px;
+
+    background-color: var(--purple);
+    border: 2px solid var(--light-purple);
+
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+
+    color: var(--white);
+}
+
+.main #convert-btn{
+    width: 120px;
+    height: 40px;
+    
+    color:var(--light);
+    background-color: var(--white);
+
+    border: none;
+}
+
+.main #user-input, #convert-btn{
+    border-radius: 5px;
+
+}
+
+.bottom{
+    height: 450px;
+    background-color: var(--dark-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#length, #volume, #mass{
+    width: 500px;
+    height: 100px;
+
+    background-color: var(--white);
+    border-radius: 5px;
+
+    h2{
+        color: var(--dark-purple);
+    }
+
+    p{
+       color: var(--grey);
+    }
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    
+#container{
+    min-width: 80%;
+}
+
+.main{
+    min-height: none;
+}
+
+.main h1{
+    font-size: 26px;
+}
+
+.bottom{
+    height: 450px;
+    background-color: var(--dark-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#length, #volume, #mass{
+    width: 80%;
+    height: 100px;
+
+    background-color: var(--white);
+    border-radius: 5px;
+
+    h2{
+        color: var(--dark-purple);
+    }
+
+    p{
+       color: var(--grey);
+    }
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+}
