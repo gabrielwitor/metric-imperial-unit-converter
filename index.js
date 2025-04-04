@@ -39,3 +39,7 @@ function render(value){
 
     massDiv.lastElementChild.textContent = `${value} kilos = ${convertKilogramPound(value)} pounds | ${value} pounds = ${convertKilogramPound(value)} kilos`;
 }
+
+convertBtn.addEventListener("click",()=>{
+    render(inputEl.value);
+})
